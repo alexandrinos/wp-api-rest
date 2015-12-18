@@ -1,0 +1,596 @@
+/* 
+Theme Name: Astoned
+Astoned WordPress Theme, Copyright 2014 Yash Karnad
+Author: Yash karnad
+Author Email:yashkarnad@gmail.com
+Description: This theme, while lacking any fancy functionality,makes up for it in prompt responsiveness and easy to use user interface thus making it the ideal choice for personal bloggers wanting to make their bones on a budget.
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:white, black, one-column,two-columns,right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style,featured-images,post-formats
+*/
+
+
+
+body{
+    overflow-x: hidden;
+   
+}
+
+a{
+    color:black;
+    
+}
+
+.current-menu-item a{
+    background-color: #ff3333;
+    
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 2em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 2em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ .alignnone {
+	display: block;
+	margin: 0 0 1.75em 0;
+}
+
+.full-page,.archives,.sample-Page,.search-part{
+    float: left;
+    margin: 0 -26.4% 0 0;
+   width: 60%;
+   
+}
+
+.content-editor,#submit-search,.pg-footer,.side1 li,.widget-title,#menu-links,#submit,#menu-links ul ul a,.pagination-links a,.comment-reply-link{
+color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  *background-color: #222222;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+ }
+ 
+ #content-author,#content-category a,#previous-post,#next-post,.edit-link{
+      display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+ }
+ 
+ #next-post{
+     position: relative;
+     left:40px;
+ }
+ 
+ #search-topic,#category-choice,#archive-choice{
+     
+     display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #ff3333;
+  *background-color: #e6e6e6;
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          
+          font-size: 20px;
+ }
+ 
+ .content-editor,#submit{
+     border-radius: 20px;
+ }
+ 
+/* Captions*/
+  
+.wp-caption,.gallery-caption{
+	background: #eee;
+	margin-bottom: 1.625em;
+	max-width: 96%;
+	padding: 9px;
+}
+.wp-caption img,embed,
+iframe,
+object {
+	max-width: 100%;
+        border-color: #eee;
+}
+.wp-caption-text {
+	color: #989eae;
+	display: block;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto;  
+}
+img.size-full,
+img.size-large {
+	max-width: 97.5%;
+	width: auto;  
+	height: auto; 
+}
+
+
+img[class*="align"],
+img[class*="wp-image-"],
+#content .gallery .gallery-icon img {
+	border: 1px solid #ddd;
+	padding: 6px;
+	max-width: 97.5%;
+}
+ 
+.sticky{
+    position: absolute;
+    background-color: #cccccc;
+}
+
+.content-editor{
+     width:80px;
+ } 
+ 
+ #post-title a{
+     color:black;
+     font-size: 40px;
+ }
+
+#content-author { 
+   
+     width: 60px;
+ } 
+ 
+ #content-author a{
+     color:black;
+     padding-right: 10px;
+ }
+ 
+ #content-category a{
+     color:black;
+ }
+ 
+ #comment-state a{
+    color:black;
+    padding-bottom: 20px;
+ }
+ 
+  
+ 
+/*Header.php*/
+.main-header{
+
+     background: white;
+	border-bottom: solid 3px black;
+	border-left: solid 3px black;
+	border-right: solid 3px black;
+	border-top: solid 3px black;
+	letter-spacing: 0.2em;
+	height:200px;
+	padding: 40px 10px 15px 60px;
+       width: auto;
+       position: relative;
+       
+       text-align: center;
+}
+
+.main-header a{
+    color:black;
+    font-size: 60px;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+}
+
+a{
+    text-decoration: none;
+ }
+ 
+ 
+#menu-links {
+	
+	clear: both;
+	display: block;
+	float: left;
+	margin: 0 auto 6px;
+	width: 88%;
+        padding-left: 10em;
+        
+}
+#menu-links ul {
+	padding-left: 0;
+	list-style: none;
+	margin: 0 0 0 -0.8125em;
+       }
+
+#menu-links li {
+
+position: relative;
+float: left;
+}
+
+#menu-links a {
+	color: #eee;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 2.5125em;
+	text-decoration: none;
+}
+
+#menu-links ul ul {
+    	display: none;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 3.333em;
+         left: 0;
+	width: 188px;
+	z-index: 99999;
+        padding-left: 0;
+}
+
+#menu-links ul ul ul {
+	left: 100%;
+	top: 0;
+        
+}
+
+#menu-links ul ul a {
+	color: white;
+	font-size: 13px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1.4em;
+	padding: 10px 10px;
+	width: 168px;
+}
+
+
+#menu-links li:hover > a,
+#menu-links ul ul :hover > a,
+#menu-links a:focus {
+    background: #ff3333;
+}
+
+#menu-links ul li:hover > ul {
+	display: block;
+}
+
+
+/*Sidebar.php*/
+.sidebar-main{
+   
+   float: right;
+   margin-right: 7.6%;
+   width: 18.8%;
+  
+}
+
+.side1{
+    margin-top: 3px;
+    background-color: white;
+    
+}
+
+.side1 li{
+    padding-left: 30px;
+    position: relative;
+    bottom:19px;
+    right:40px;
+    width:11em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.side1 li a{
+    color:white;
+}
+
+.side1 li a:hover,#comment-state a:hover{
+    color:#ff3333;
+    
+}
+.widget-title{
+    border-style: solid;
+   width: 170px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    
+ }
+
+/*Content.php*/
+.main-content-style{
+   padding-top: 20px;
+  
+  
+}
+
+
+p a{
+    color:white;
+    padding-left: 7px;
+}
+
+
+#post-content{
+    padding-top: 20px;
+    
+}
+ 
+input[type="text"],
+.uneditable-input,
+textarea
+{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+          padding-left: 30px;
+}
+
+
+
+input[type="text"],
+.uneditable-input,
+textarea
+{
+  display: inline-block;
+  height: 25px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+
+input[type="text"]:focus,
+.uneditable-input:focus,
+textarea:focus
+{
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+textarea{
+    height: 200px;
+}
+
+#submit-search{
+    position: relative;
+    bottom:3px;
+}
+
+/*Footer Styling*/
+.pg-footer a{
+   color:white;
+  
+  
+}
+
+.pg-footer{
+   float: none;
+   margin-right: 0;
+  clear: both;
+  font-size: 12px;
+  line-height: 2.2em;
+  padding: 2.2em 0.5em;
+  text-align: center;
+    
+}
+
+.comment-meta,.bypostauthor{
+	background-color: #b3b3b3;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #666;
+        width: 550px;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: 300;
+	text-decoration: none;
+	padding: 0 8px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+}
+
+.comment-author .avatar {
+		height: 44px;
+		top: 2px;
+		width: 44px;
+	}
+        
+ .comment-text{
+            color:black;
+            font-family: cursive;
+        }       
+        
+ .comment-reply-link{
+    padding: 2px 20px 2px 20px;
+    border-radius: 15px;
+}
+
+#comment-number{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination-links{
+    position: relative;
+    left:23em;
+    margin: 48px 0;
+    
+}
+.page-numbers{
+    padding: 10px 20px 10px 20px;
+    
+}
+.page-numbers:hover {
+	color:#ff3333;
+         padding: 10px 20px 10px 20px;
+}
+
+
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+@media (max-width: 800px) {
+	/* Simplify the basic layout */
+	.main-header {
+        height: 150px;	
+        width: auto;
+	}
+        
+        .sidebar-main {
+		float: none;
+		margin: 0 7.6%;
+		width: auto;
+	}
+        
+        .full-page,.archives,.sample-Page,.search-part{
+   
+   width: 100%;
+   
+}
+        
+       .site-title a{
+            font-size: 40px;
+        }
+        
+        #menu-links{
+            padding-left: 4em;
+            width: auto;
+        }
+        
+        #menu-links ul{
+            font-size: 12px;
+           
+        }
+       
+        
+        #nav-below {
+		border-bottom: 1px solid #ddd;
+		margin-bottom: 1.625em;
+	}
+	
+        .pagination-links{
+    position: relative;
+    left:1em;
+    margin: 48px 0;
+    
+}
+
+.paging-nav .loop-pagination {
+	margin-top: -5px;
+	text-align: center;
+}
+
+.paging-nav .page-numbers {
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 1px;
+        margin-top: 10px;
+	padding: 7px 16px;
+	
+}
+
+.paging-nav a {
+	color: white;
+}
+
+}
+
